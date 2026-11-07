@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Jacob Su — Ohio State Computer Science and Engineering student building software, applied AI systems, robotics tools, and interactive maps. Explore projects and resume.">
+  <meta name="theme-color" content="#faf9f6">
+  <meta property="og:title" content="Jacob Su | Software, AI & Robotics">
+  <meta property="og:description" content="Selected projects, research experience, and resume. Computer Science and Engineering at The Ohio State University.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pekingperson.github.io/">
+  <link rel="canonical" href="https://pekingperson.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+  <title>Jacob Su | Software, AI & Robotics</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./" aria-label="Jacob Su home"><span class="monogram" aria-hidden="true">JS<span>.</span></span><span>Jacob Su</span></a>
+      <nav aria-label="Main navigation">
+        <a class="nav-link active" href="#projects" aria-current="page">Projects</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-github" href="https://github.com/pekingperson" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="intro-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineer in the making</p>
+      <h1 id="intro-title">Software, AI<br>&amp; <em>robotics.</em></h1>
+      <div class="hero-bottom">
+        <div class="hero-intro">
+          <p>I'm Jacob, a Computer Science and Engineering student at <strong>The Ohio State University</strong>, with a minor in Robotics. I build useful software and explore how intelligent systems interact with the world.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="resume.html">View my resume <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <dl class="hero-details">
+          <div><dt>Based in</dt><dd>Ohio, United States</dd></div>
+          <div><dt>Looking ahead</dt><dd>Software &amp; AI internships</dd></div>
+          <div><dt>Currently exploring</dt><dd>AI evaluation &amp; robot learning</dd></div>
+        </dl>
+      </div>
+      <div class="hero-rule"><span>From browser tools to robotic systems</span><span aria-hidden="true">01 / SELECTED WORK</span></div>
+    </section>
+
+    <section class="projects container section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Ideas, made tangible</p><h2 id="projects-title">Selected projects<span class="small-dot">.</span></h2></div>
+        <p>A selection of what I've been building. <br>Explore a live demo or look under the hood.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project" id="ur5e">
+          <a class="project-cover robot-cover" href="https://pekingperson.github.io/Hand_Control_UR5e/" target="_blank" rel="noopener noreferrer" aria-label="Open the UR5e Teach and Play live demo">
+            <span class="cover-label">ROBOTICS / INTERACTIVE SIMULATION</span>
+            <svg class="robot-diagram" viewBox="0 0 580 330" aria-hidden="true">
+              <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="currentColor" stroke-opacity=".1"/></pattern></defs>
+              <rect width="580" height="330" fill="url(#grid)"/>
+              <ellipse cx="292" cy="283" rx="157" ry="29" fill="none" stroke="currentColor" opacity=".15"/>
+              <path d="M180 278L343 278L433 229" fill="none" stroke="currentColor" opacity=".22"/>
+              <path d="M225 278V242L191 150L303 77L370 128L408 123" fill="none" stroke="currentColor" stroke-width="26" stroke-linejoin="round"/>
+              <path d="M225 242L191 150L303 77L370 128L408 123" fill="none" stroke="#d8e7db" stroke-width="14" stroke-linejoin="round"/>
+              <g fill="#25483f" stroke="#d8e7db" stroke-width="4"><circle cx="225" cy="242" r="17"/><circle cx="191" cy="150" r="19"/><circle cx="303" cy="77" r="18"/><circle cx="370" cy="128" r="15"/></g>
+              <path d="M407 114L424 111L430 131M409 132L427 131L436 112" fill="none" stroke="#d8e7db" stroke-width="5"/>
+              <path d="M209 279H241M203 286H247" stroke="currentColor" stroke-width="8"/>
+              <path d="M430 123C479 139 468 213 414 230" fill="none" stroke="#e8bc85" stroke-width="2" stroke-dasharray="5 7"/>
+              <circle cx="414" cy="230" r="5" fill="#e8bc85"/>
+              <g stroke="#e8bc85" stroke-width="1"><path d="M110 231V199M110 231H143"/><path d="M110 199L106 207M110 199L114 207M143 231L135 227M143 231L135 235"/></g>
+              <g fill="#c6d8cc" font-family="monospace" font-size="10"><text x="106" y="190">Z</text><text x="151" y="235">X</text><text x="395" y="263">TOOL PATH</text><text x="50" y="43">6-AXIS / UR5e</text></g>
+            </svg>
+            <span class="cover-foot">Hand gestures → robot motion <span class="cover-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <div class="project-title"><h3>UR5e Teach &amp; Play</h3><span class="project-number">01</span></div>
+          <p>A browser-based robot simulator with analytical inverse kinematics, waypoint playback, and a STEP-derived gripper controlled with MediaPipe hand gestures.</p>
+          <ul class="tags" aria-label="UR5e technologies"><li>TypeScript</li><li>Three.js</li><li>MediaPipe</li><li>Robotics</li></ul>
+          <div class="project-links"><a href="https://pekingperson.github.io/Hand_Control_UR5e/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/Hand_Control_UR5e" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="project" id="geography">
+          <a class="project-cover map-cover" href="https://pekingperson.github.io/United-States-Comprehensive-Geographic-Interactive-Website/" target="_blank" rel="noopener noreferrer" aria-label="Open the U.S. Geography Explorer live demo">
+            <span class="cover-label">GEOSPATIAL / DATA VISUALIZATION</span>
+            <div class="map-window"><img src="assets/geography-preview.png" width="1280" height="720" alt="U.S. Geography Explorer showing Census population dots and geographic filters" loading="lazy" decoding="async"></div>
+            <span class="cover-foot">A closer look at the places we live <span class="cover-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <div class="project-title"><h3>U.S. Geography Explorer</h3><span class="project-number">02</span></div>
+          <p>An interactive map connecting Census Reporter profiles, Census Dots population data, and Opportunity Atlas overlays. Explore communities through multiple geographic layers.</p>
+          <ul class="tags" aria-label="Geography technologies"><li>JavaScript</li><li>GIS</li><li>Census data</li><li>Data visualization</li></ul>
+          <div class="project-links"><a href="https://pekingperson.github.io/United-States-Comprehensive-Geographic-Interactive-Website/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/United-States-Comprehensive-Geographic-Interactive-Website" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="project" id="memory">
+          <a class="project-cover memory-cover" href="https://github.com/pekingperson/YouTube-Recommendation-Memory-Extension" target="_blank" rel="noopener noreferrer" aria-label="View the Recommendation Memory repository and installation instructions">
+            <span class="cover-label">BROWSER EXTENSION / LOCAL STORAGE</span>
+            <div class="memory-visual" aria-hidden="true">
+              <div class="memory-sheet sheet-back"></div><div class="memory-sheet sheet-middle"></div>
+              <div class="memory-sheet sheet-front"><div class="memory-heading"><span class="play-mark">▶</span><strong>Recommendation<br>Memory</strong><span class="bookmark">↺</span></div><div class="memory-rule"></div><p>Good recommendations.<br>Worth remembering.</p><div class="memory-bottom"><span>2,000 saved loads</span><span>Stored locally</span></div></div>
+            </div>
+            <span class="cover-foot">Capture. Search. Rediscover. <span class="cover-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <div class="project-title"><h3>Recommendation Memory</h3><span class="project-number">03</span></div>
+          <p>A Chrome and Edge extension that saves recommendations before they disappear. Search up to 2,000 YouTube homepage loads, with all history stored locally in your browser.</p>
+          <ul class="tags" aria-label="Recommendation Memory technologies"><li>TypeScript</li><li>Chrome / Edge</li><li>Browser APIs</li></ul>
+          <div class="project-links"><a href="https://github.com/pekingperson/YouTube-Recommendation-Memory-Extension#install-the-ready-to-use-extension" target="_blank" rel="noopener noreferrer">Installation guide <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/YouTube-Recommendation-Memory-Extension" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="project" id="kinematics">
+          <a class="project-cover hub-cover" href="https://github.com/pekingperson/kinematics_hub" target="_blank" rel="noopener noreferrer" aria-label="View the Kinematics Hub source code">
+            <span class="cover-label">FULL-STACK / ROBOTICS COMMUNITY</span>
+            <div class="hub-visual" aria-hidden="true"><div class="hub-core"><span class="hub-symbol">k<span>h</span></span><strong>Kinematics Hub</strong><span>Next.js · FastAPI</span></div><div class="hub-line"></div><div class="hub-services"><span>Community</span><span>Tools</span><span>AI assistant</span></div><p>Modular services. One workspace.</p></div>
+            <span class="cover-foot">Connecting the robotics community <span class="cover-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <div class="project-title"><h3>Kinematics Hub</h3><span class="project-number">04</span></div>
+          <p>A modular platform for the robotics community, with a Next.js frontend, FastAPI services, JWT authentication, and Docker Compose. Built around tools, projects, and shared knowledge.</p>
+          <ul class="tags" aria-label="Kinematics Hub technologies"><li>Next.js</li><li>FastAPI</li><li>Docker</li><li>PostgreSQL</li></ul>
+          <div class="project-links"><a href="https://github.com/pekingperson/kinematics_hub" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/kinematics_hub/blob/main/docs/architecture.md" target="_blank" rel="noopener noreferrer">Architecture <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+
+      <div class="more-projects">
+        <h3>More explorations</h3>
+        <a href="https://github.com/pekingperson/gis-viewer-natural" target="_blank" rel="noopener noreferrer"><span><strong>GIS Viewer</strong><span>Map calibration, annotations, distance measurement, and GeoJSON overlays.</span></span><span class="more-tech">JavaScript / Canvas</span><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/pekingperson/grashof_4bar" target="_blank" rel="noopener noreferrer"><span><strong>Grashof Linkage Explorer</strong><span>An interactive exploration of planar four-bar linkage motion.</span></span><span class="more-tech">React / TypeScript / D3</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="about-band" aria-labelledby="about-title">
+      <div class="container about-layout"><div><p class="eyebrow">A bit of background</p><h2 id="about-title">From research <br>to working software.</h2><a class="text-link" href="resume.html">The full story <span aria-hidden="true">↗</span></a></div><div class="about-copy"><p>My work spans applied AI, robot learning, and software development. Through a partnership between Elorian.AI and AxioForge AI, I've worked on prompt-to-CAD workflows and benchmarks for evaluating generated models.</p><p>At Ohio State, I've supported vision-transformer and continual-learning research, as well as hands-on robot calibration, simulation, and data collection. I enjoy the process of turning an idea into something I can build, test, and improve.</p><div class="about-foot"><span>Ohio State University</span><span>CSE + Robotics · Class of 2028</span></div></div></div>
+    </section>
+
+    <section class="contact container section" id="contact" aria-labelledby="contact-title"><p class="eyebrow">Let's connect</p><div class="contact-layout"><h2 id="contact-title">Have something <br><em>in mind?</em></h2><div><p>I'm interested in software engineering, AI, and robotics opportunities. I'd love to hear about your team or a project you're working on.</p><a class="contact-email" href="mailto:jacob.yuanfeng.su@gmail.com">jacob.yuanfeng.su@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/pekingperson" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jacob-su-a13038284/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><button class="copy-email" type="button" data-copy-email="jacob.yuanfeng.su@gmail.com">Copy email</button><span class="copy-status" aria-live="polite"></span></div></div></div></section>
+  </main>
+  <footer class="site-footer container"><span>© <span data-year>2026</span> Jacob Su</span><span>Built with curiosity. Based in Ohio.</span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
