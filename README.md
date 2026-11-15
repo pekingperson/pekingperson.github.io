@@ -27,7 +27,7 @@ Software project descriptions were checked against the public repositories on No
 
 ### Project images
 
-Illustrated thumbnails were removed November 8, 2026. UMI retains a labeled placeholder pending a photo of Jacob's work.
+Illustrated thumbnails were removed November 8, 2026. The UMI placeholder was replaced with Jacob's supplied lab photo on November 14, 2026 (`assets/umi-lab-setup.png`). The full image is displayed without cropping the robot or gripper.
 
 - UR5e and geography previews are screenshots of the live projects.
 - Recommendation Memory is an actual screenshot of the compiled extension interface from repository commit `f78f54d`, captured in a local preview with an empty archive. A temporary in-memory extension API adapter allows the unchanged interface to run outside Chrome's extension context. No personal browsing history is shown.
