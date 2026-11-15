@@ -23,7 +23,7 @@ No dependency installation or build step is required. All content and links work
 
 Edit either HTML page directly. Update experience, education, and skills in `resume.html`, and project descriptions and links in `index.html`. The extension project summary reflects the current public repository's 2,000-load capacity. The website presents the resume as an HTML page and does not host a downloadable resume.
 
-Software project descriptions were checked against the public repositories on November 7, 2026. Research and hardware-project descriptions are based on Jacob's existing resumes and research materials; the three hardware entries were added November 8, 2026. The UMI card describes Jacob's contributions and explicitly links to the original research at https://umi-gripper.github.io/.
+Software project descriptions were checked against the public repositories on November 7, 2026. Research and hardware-project descriptions are based on Jacob's existing resumes and research materials; the three hardware entries were added November 8, 2026. The UMI card describes Jacob's contributions and explicitly links to the original research at https://umi-gripper.github.io/. The UMI description and DISL internship bullets were updated November 15, 2026 using the supplied *UMI Summer Project Summary* (DISL Summer 2024), covering Robotiq controller integration, compatibility fixes, SLAM-based dataset preparation, training, and physical-robot evaluations.
 
 ### Project images
 
