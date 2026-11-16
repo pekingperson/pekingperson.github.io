@@ -2,7 +2,7 @@
 
 Professional two-page portfolio hosted at **https://pekingperson.github.io/**.
 
-- `index.html`: introduction, UMI research contributions, LeRobot SO-101 / DoFBot / Jetson Nano hardware projects, six public software projects, background, and contact.
+- `index.html`: introduction, UR5e simulation and NIST benchmark work with three videos, UMI research contributions, LeRobot SO-101 / DoFBot / Jetson Nano hardware projects, six public software projects, background, and contact.
 - `resume.html`: experience, education, skills, projects, and honors.
 - `assets/styles.css`: responsive styling and print layout.
 - `assets/site.js`: email-copy interaction and footer year.
@@ -37,6 +37,17 @@ Illustrated thumbnails were removed November 8, 2026. The UMI placeholder was re
 - Jetson Nano: [NVIDIA product image](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/), saved as `assets/jetson-nano-reference.jpg`.
 
 Hardware images have visible source credits and illustrate the products; they are not photos of Jacob's own builds. All images are served locally from `assets/`.
+
+### Project videos
+
+The UR5e Simulation & NIST Benchmarks project was added November 15, 2026 from Jacob's supplied videos and the Teams research discussion he asked to use. The description reflects his simulation-environment and benchmark-setup contributions. It does not claim completed real-world policy validation or the collaborator's model results.
+
+- `assets/videos/ur5e-third-person.mp4`: Jacob's third-person simulation recording, supplied as `third_person_camera.mp4` (1:56).
+- `assets/videos/ur5e-wrist-camera.mp4`: Jacob's wrist-camera simulation recording, supplied as `wrist_camera.mp4` (1:56).
+- `assets/videos/ur5e-lab-comparison.mp4`: the supplied October 12 reference reconstruction clip, credited to Prof. Haijun Su as the person who shared it (0:19).
+- The adjacent JPG poster images are frames extracted from those exact videos. The original H.264 video streams are preserved and the MP4 containers are prepared for progressive playback. No audio tracks are present.
+
+Videos use native controls, inline mobile playback, and `preload="none"`, with no autoplay. The gallery stacks on narrow screens. The public page links to AlphaNIST as benchmark inspiration; the private chat, lab measurements, and private repository are not included in the site.
 
 ## Deploy
 
