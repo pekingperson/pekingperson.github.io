@@ -72,7 +72,7 @@
             <div class="research-description">
               <p>Evaluated visual reasoning and failure modes across open-source and proprietary LLMs, including Qwen, Kimi, OpenAI models, and Anthropic Claude Opus 5 and Fable 5. Implemented API-based evaluations and supported prompt-to-CAD workflows. Refined VQA audits and reference views for 43 CAD model packages, achieving a 100% pass rate in package validation.</p>
               <p>Built a deterministic Python/OpenCV program that projects individual STEP solids into flat silhouettes and counts gear teeth from polar contours. Added component-name and geometric filters to reject non-gears, with numbered tooth images and structured reports for inspection.</p>
-              <p>Eliminated all false positives while correctly counting all gears in a 17-solid gearbox, and cut observed processing time from 49 to 22 seconds through semantic and geometric filtering. A geometry-only run recovered the same gear counts.</p>
+              <p>Eliminated all false positives while correctly counting all gears in a 17-solid gearbox, and cut observed processing time from 49 to 22 seconds by filtering out non-gear parts based on their names and shapes. A geometry-only run recovered the same gear counts.</p>
               <div class="project-links"><a href="https://elorian.ai/" target="_blank" rel="noopener noreferrer">Elorian.AI <span aria-hidden="true">↗</span></a><a href="resume.html#elorian-experience">Experience <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
@@ -151,7 +151,7 @@
             <img src="assets/ur5e-preview.png" width="1440" height="900" alt="UR5e robot simulator screenshot showing the robot viewport, trajectory controls, and gripper controls" loading="lazy" decoding="async">
           </a>
           <div class="project-title"><h3>UR5e Robot Teach &amp; Play</h3><span class="project-number">01</span></div>
-          <p>A browser-based robot simulator with analytical inverse kinematics, waypoint playback, and a STEP-derived gripper controlled with MediaPipe hand gestures.</p>
+          <p>A browser-based robot simulator with analytical inverse kinematics, waypoint playback, and a STEP-derived gripper controlled with webcam hand gestures using the JavaScript MediaPipe library.</p>
           <ul class="tags" aria-label="UR5e robot technologies"><li>TypeScript</li><li>Three.js</li><li>MediaPipe</li><li>Robotics</li></ul>
           <div class="project-links"><a href="https://pekingperson.github.io/Hand_Control_UR5e/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/Hand_Control_UR5e" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
         </article>
