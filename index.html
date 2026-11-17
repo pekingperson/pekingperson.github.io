@@ -36,7 +36,7 @@
       <h1 id="intro-title">Jacob Su</h1>
       <div class="hero-bottom">
         <div class="hero-intro">
-          <p>I'm a Computer Science and Engineering student at <strong>The Ohio State University</strong>, with a minor in Robotics and Autonomous Systems. My projects include web applications, browser extensions, interactive maps, and robot simulations.</p>
+          <p>I'm a Computer Science and Engineering student at <strong>The Ohio State University</strong>, with a minor in Robotics and Autonomous Systems. My work includes robot simulation, computer vision, model evaluation, and software development.</p>
           <div class="hero-actions">
             <a class="button button-dark" href="#projects">View projects <span aria-hidden="true">↓</span></a>
             <a class="text-link" href="resume.html">View my resume <span aria-hidden="true">↗</span></a>
@@ -49,7 +49,7 @@
         </div>
         <dl class="hero-details">
           <div><dt>Based in</dt><dd>Ohio, United States</dd></div>
-          <div><dt>Seeking</dt><dd>Software &amp; AI internships</dd></div>
+          <div><dt>Seeking</dt><dd>Robotics, software &amp; AI internships</dd></div>
           <div><dt>Interests</dt><dd>AI evaluation &amp; robot learning</dd></div>
         </dl>
       </div>
@@ -70,8 +70,9 @@
               <ul class="tags" aria-label="Elorian project areas"><li>LLM evaluation</li><li>Visual reasoning</li><li>API integration</li><li>CAD benchmarks</li></ul>
             </div>
             <div class="research-description">
-              <p>Evaluated visual reasoning across open-source and proprietary LLMs, including Qwen, Kimi, OpenAI models, and Anthropic Claude Opus 5 and Fable 5. Used API calls and API keys for OpenAI evaluations and model comparisons, analyzing outputs and failure modes.</p>
-              <p>Developed a gear tooth counting algorithm and supported prompt-to-CAD workflows and CAD benchmarks.</p>
+              <p>Evaluated visual reasoning and failure modes across open-source and proprietary LLMs, including Qwen, Kimi, OpenAI models, and Anthropic Claude Opus 5 and Fable 5. Implemented API-based evaluations and supported prompt-to-CAD workflows. Updated VQA audits and reference views across 43 CAD model packages; all 43 passed package validation.</p>
+              <p>Built a deterministic Python/OpenCV program that projects individual STEP solids into flat silhouettes and counts gear teeth from polar contours. Added component-name and geometric filters to reject non-gears, with numbered tooth images and structured reports for inspection.</p>
+              <p>On one 17-solid gearbox, the final pipeline counted all four gears (24, 72, 18, and 72 teeth) and eliminated three splined-shaft false positives. Observed runtime fell from approximately 49 to 22 seconds on that assembly; a geometry-only run recovered the same four counts.</p>
               <div class="project-links"><a href="https://elorian.ai/" target="_blank" rel="noopener noreferrer">Elorian.AI <span aria-hidden="true">↗</span></a><a href="resume.html#elorian-experience">Experience <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
@@ -115,6 +116,22 @@
           </div>
         </article>
 
+        <article class="project research-project" id="gear-tooth-counter" aria-labelledby="gear-counter-title">
+          <div class="research-heading">
+            <div>
+              <p class="eyebrow">Follow-on project · September 2026</p>
+              <h3 id="gear-counter-title">Gear Tooth Counting from Images</h3>
+              <ul class="tags" aria-label="Gear counter technologies"><li>Python</li><li>OpenCV</li><li>Multi-view geometry</li><li>Focused evaluation</li></ul>
+            </div>
+            <div class="research-description">
+              <p>Extended the August STEP counter with an image-only pipeline for rendered CAD views. Rectified oblique gear faces, masked hidden contour arcs, and combined accepted views to estimate tooth counts under partial occlusion.</p>
+              <p>On a fixed 12-asset development set, obtained 11/12 exact counts (91.7%) for clean views and 11/12 after synthetic 90-degree contour masking. Both tested transmission ratios were exact (2/2). Evaluation used four local worker processes.</p>
+              <p>The remaining error was a low-resolution 56-tooth sprocket. These results describe the focused development set; the full benchmark was not run.</p>
+              <div class="project-links"><a href="#elorian-ai">Earlier STEP work <span aria-hidden="true">↑</span></a><a href="resume.html#gear-counter-resume">Resume entry <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </div>
+        </article>
+
         <article class="project umi-project" id="umi">
           <a class="project-cover umi-photo" href="https://umi-gripper.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Read the original Universal Manipulation Interface research">
             <img src="assets/umi-lab-setup.png" width="1024" height="768" alt="UR5e robot with an orange gripper mounted on a laboratory workbench for UMI experiments" loading="lazy" decoding="async">
@@ -128,47 +145,6 @@
             <div class="project-links"><a href="https://umi-gripper.github.io/" target="_blank" rel="noopener noreferrer">Original UMI research <span aria-hidden="true">↗</span></a><a href="resume.html#experience">Research experience <span aria-hidden="true">↗</span></a></div>
           </div>
         </article>
-
-        <div class="hardware-projects" id="hardware-projects" role="group" aria-label="Personal robotics projects">
-          <article class="hardware-project" id="lerobot-so101">
-            <figure class="hardware-media">
-              <div class="hardware-cover hardware-photo so101-photo"><img src="assets/so101-reference.jpg" width="1400" height="1050" alt="Seeed Studio SO-101 leader and follower arms demonstrating a pick-and-place task" loading="lazy" decoding="async"></div>
-              <figcaption class="image-credit">Product image · <a href="https://www.seeedstudio.com/SO-ARM101-Pro-Unassembled-Bundle.html" target="_blank" rel="noopener noreferrer">Seeed Studio</a></figcaption>
-            </figure>
-            <div class="hardware-content">
-              <h3>LeRobot SO-101</h3>
-              <p class="hardware-role">Leader/follower teleoperation</p>
-              <p class="hardware-description">Built a LeRobot SO-101 leader/follower teleoperation setup, using the leader arm to control the follower's movement.</p>
-              <ul class="tags" aria-label="SO-101 project topics"><li>LeRobot</li><li>Teleoperation</li><li>Robot manipulation</li></ul>
-            </div>
-          </article>
-
-          <article class="hardware-project" id="dofbot">
-            <figure class="hardware-media">
-              <div class="hardware-cover hardware-photo"><img src="assets/dofbot-reference.jpg" width="1800" height="1800" alt="Yahboom DoFBot robotic arm with its camera, gripper, and Jetson Nano base" loading="lazy" decoding="async"></div>
-              <figcaption class="image-credit">Product image · <a href="https://www.yahboom.store/products/dofbot-jetson_nano" target="_blank" rel="noopener noreferrer">Yahboom</a></figcaption>
-            </figure>
-            <div class="hardware-content">
-              <h3>DoFBot</h3>
-              <p class="hardware-role">Color following and facial recognition</p>
-              <p class="hardware-description">Programmed a DoFBot robotic arm for color-based following and facial recognition.</p>
-              <ul class="tags" aria-label="DoFBot project topics"><li>DoFBot</li><li>Color tracking</li><li>Facial recognition</li></ul>
-            </div>
-          </article>
-
-          <article class="hardware-project" id="jetson-nano">
-            <figure class="hardware-media">
-              <div class="hardware-cover hardware-photo"><img src="assets/jetson-nano-reference.jpg" width="1280" height="720" alt="NVIDIA Jetson Nano Developer Kit with heatsink and USB and Ethernet ports" loading="lazy" decoding="async"></div>
-              <figcaption class="image-credit">Product image · <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/" target="_blank" rel="noopener noreferrer">NVIDIA</a></figcaption>
-            </figure>
-            <div class="hardware-content">
-              <h3>Jetson Nano</h3>
-              <p class="hardware-role">Collision-avoidance experiments</p>
-              <p class="hardware-description">Ran collision-avoidance experiments with AI deployed on an NVIDIA Jetson Nano.</p>
-              <ul class="tags" aria-label="Jetson project topics"><li>NVIDIA Jetson</li><li>Edge AI</li><li>Collision avoidance</li></ul>
-            </div>
-          </article>
-        </div>
 
         <article class="project" id="ur5e">
           <a class="project-cover screenshot-cover" href="https://pekingperson.github.io/Hand_Control_UR5e/" target="_blank" rel="noopener noreferrer" aria-label="Open the UR5e Robot Teach and Play live demo">
@@ -211,6 +187,47 @@
           <ul class="tags" aria-label="Kinematics Hub technologies"><li>Next.js</li><li>FastAPI</li><li>Docker</li><li>PostgreSQL</li></ul>
           <div class="project-links"><a href="https://github.com/pekingperson/kinematics_hub" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a><a href="https://github.com/pekingperson/kinematics_hub/blob/main/docs/architecture.md" target="_blank" rel="noopener noreferrer">Architecture <span aria-hidden="true">↗</span></a></div>
         </article>
+        <div class="hardware-projects" id="hardware-projects" role="group" aria-label="Personal robotics projects">
+          <article class="hardware-project" id="lerobot-so101">
+            <figure class="hardware-media">
+              <div class="hardware-cover hardware-photo so101-photo"><img src="assets/so101-reference.jpg" width="1400" height="1050" alt="Seeed Studio SO-101 leader and follower arms demonstrating a pick-and-place task" loading="lazy" decoding="async"></div>
+              <figcaption class="image-credit">Product image · <a href="https://www.seeedstudio.com/SO-ARM101-Pro-Unassembled-Bundle.html" target="_blank" rel="noopener noreferrer">Seeed Studio</a></figcaption>
+            </figure>
+            <div class="hardware-content">
+              <h3>LeRobot SO-101</h3>
+              <p class="hardware-role">Leader/follower teleoperation</p>
+              <p class="hardware-description">Built a LeRobot SO-101 leader/follower teleoperation setup, using the leader arm to control the follower's movement.</p>
+              <ul class="tags" aria-label="SO-101 project topics"><li>LeRobot</li><li>Teleoperation</li><li>Robot manipulation</li></ul>
+            </div>
+          </article>
+
+          <article class="hardware-project" id="dofbot">
+            <figure class="hardware-media">
+              <div class="hardware-cover hardware-photo"><img src="assets/dofbot-reference.jpg" width="1800" height="1800" alt="Yahboom DoFBot robotic arm with its camera, gripper, and Jetson Nano base" loading="lazy" decoding="async"></div>
+              <figcaption class="image-credit">Product image · <a href="https://www.yahboom.store/products/dofbot-jetson_nano" target="_blank" rel="noopener noreferrer">Yahboom</a></figcaption>
+            </figure>
+            <div class="hardware-content">
+              <h3>DoFBot</h3>
+              <p class="hardware-role">Color following and facial recognition</p>
+              <p class="hardware-description">Programmed a DoFBot robotic arm for color-based following and facial recognition.</p>
+              <ul class="tags" aria-label="DoFBot project topics"><li>DoFBot</li><li>Color tracking</li><li>Facial recognition</li></ul>
+            </div>
+          </article>
+
+          <article class="hardware-project" id="jetson-nano">
+            <figure class="hardware-media">
+              <div class="hardware-cover hardware-photo"><img src="assets/jetson-nano-reference.jpg" width="1280" height="720" alt="NVIDIA Jetson Nano Developer Kit with heatsink and USB and Ethernet ports" loading="lazy" decoding="async"></div>
+              <figcaption class="image-credit">Product image · <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/product-development/" target="_blank" rel="noopener noreferrer">NVIDIA</a></figcaption>
+            </figure>
+            <div class="hardware-content">
+              <h3>Jetson Nano</h3>
+              <p class="hardware-role">Collision-avoidance experiments</p>
+              <p class="hardware-description">Ran collision-avoidance experiments with AI deployed on an NVIDIA Jetson Nano.</p>
+              <ul class="tags" aria-label="Jetson project topics"><li>NVIDIA Jetson</li><li>Edge AI</li><li>Collision avoidance</li></ul>
+            </div>
+          </article>
+        </div>
+
       </div>
 
       <div class="more-projects">
@@ -221,7 +238,7 @@
     </section>
 
     <section class="about-band" aria-labelledby="about-title">
-      <div class="container about-layout"><div><h2 id="about-title">Experience</h2><a class="text-link" href="resume.html">View resume <span aria-hidden="true">↗</span></a></div><div class="about-copy"><p>At Elorian.AI, I worked as a Research Assistant remotely and onsite in Palo Alto, California. I evaluated LLMs and open-source models for visual reasoning, implemented API-based evaluations, and developed an algorithm to count gear teeth. My work also included prompt-to-CAD workflows and CAD model benchmarks.</p><p>At Ohio State, I demonstrated UR5e robot operation for the team's simulation work, calibrated robots, and supported simulation and data collection.</p><div class="about-foot"><span>Ohio State University</span><span>CSE + Robotics and Autonomous Systems · Class of 2028</span></div></div></div>
+      <div class="container about-layout"><div><h2 id="about-title">Experience</h2><a class="text-link" href="resume.html">View resume <span aria-hidden="true">↗</span></a></div><div class="about-copy"><p>At Elorian.AI, I worked as a Research Assistant remotely and onsite in Palo Alto, California. I evaluated visual reasoning across LLMs, updated VQA audits across 43 CAD model packages, and built a deterministic STEP gear-tooth counter. A September follow-on project extended the counter to partially occluded rendered images.</p><p>At Ohio State, I demonstrated UR5e robot operation for the team's simulation work, calibrated robots, and supported simulation and data collection.</p><div class="about-foot"><span>Ohio State University</span><span>CSE + Robotics and Autonomous Systems · Class of 2028</span></div></div></div>
     </section>
 
     <section class="contact container section" id="contact" aria-labelledby="contact-title"><div class="contact-layout"><h2 id="contact-title">Contact</h2><div><p>For software engineering, AI, or robotics opportunities, contact me by email or LinkedIn.</p><a class="contact-email" href="mailto:jacob.yuanfeng.su@gmail.com">jacob.yuanfeng.su@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/pekingperson" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jacob-su-a13038284/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><button class="copy-email" type="button" data-copy-email="jacob.yuanfeng.su@gmail.com">Copy email</button><span class="copy-status" aria-live="polite"></span></div></div></div></section>
